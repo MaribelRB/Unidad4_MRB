@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+   <!-- Link hacia Animate CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <!-- Link hacia JQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <!-- Fancybox -->
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+   <link rel="stylesheet" href="estilo.css">
+   <link rel="stylesheet" href="movil.css">
+   <link rel="stylesheet" href="import/responsiveslides.css">
+   <link rel="stylesheet" href="libreria_carrousel_js/carrousel.css">
+   <!-- Responsive Slides -->
+   <script src="js/responsiveslides.min.js"></script>
+  <title>ProyectoFinalMRB</title>
+  <script> //Este es del slide--------------------------------------------------------------------------
+    $(function () {
+      $("#slider").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+    });
+  </script>//..........................................................
+</head>
+<body>
+  <p id="anclaa"></p>
+  <br>
+  <header>
+<!-- ---------------------------------MODAL--------------------------- -->
+    <section class="modal">
+      <section class="fondomodal" id="modal">
+        <div class="contenidomodal">
+          <div class="filtroModal">
+            <a href="#" id="cerrarbtn" class="cerrarbtn">
+              <i  class="marca fa-solid fa-x"></i>
+            </a>
+            <form class="formulario" action="" name="formulario1">
+
+
+              <article class="secciones">
+
+                <figure class="seccion_logo">
+                  <img src="imagenes/consultaonline.png" alt="">
+                </figure>
+                <div class="details">
+                  <h2 class="titulo">Contact Details</h2>
+                <br>
+                <p class="no_movil">Our Medical Center is the preferred choice for diplomats and employees from 64 embassies, consulates and UN agencies, as well as private patients from over 60 countries.</p> <br>
+                <h3>Emergency Cases</h3><i class="fa-solid fa-phone-volume"></i>
+                  <p>800 123 45 67</p>
+                <h3>Email</h3><i class="fa-solid fa-envelope"></i>
+                  <p>info@profimed.com</p>
+                <h3>Address</h3><i class="fa-solid fa-map-location-dot"></i>
+                  <p>121 Wallstreet, NY, USA</p>
+              </div>
+                <div class="seccion1">
+                  <input class="tamaño" id="NombreCompleto" name="NombreCompleto"type="text" placeholder="Nombre Completo*">
+                  <input class="tamaño" id="CorreoElectronico" name="CorreoElectronico" type="text" placeholder="Correo Electronico*">
+                  <input class="tamaño" id="Celular" name="Celular" type="tel"  placeholder="Celular*" pattern="[0-9]{10}" maxlength="10">
+                  <div class="btn">
+                    <input class="btn_rojo" type="button" value="Enviar" onClick="valida_formulario()">
+                  </div>
+                </div>
+              </article>
+            </form>
+          </div>
+        </div>
+      </section>
+    </section>
+<!-- ----------------------------------------------------- -->
+<!-- -----------------BARRA DE NAVEGACIÓN----------------------     -->
+<section class="contenedor_arriba ancho">
+
+      <div class="icon" id="iconomenu">
+        <i class="fas fa-bars fa"></i>
+      </div>
+      <figure class="logo">
+        <img class="imagen1" src="imagenes/logo.png" alt="">
+      </figure>
+      <article class="boton_contactanos_movil">
+        <a href="#" id="abrirbtn2"><i class="fa-solid fa-phone-volume"></i></a>
+      </article>
+      <article class="menu_desktop" >
+        <nav>
+          <a href="#">Home</a>
+          <a href="#categorias">Categori</a>
+          <a href="#service">Therapies</a>
+          <a href="#video">DeepMind</a>
+          <a href="#comentarios">Case Studies</a>
+          <a href="#staff">Psychiatrists</a>
+        </nav>
+      </article>
+      <article class="boton_contactanos">
+        <a href="#" id="abrirbtn">Haz una cita online</a>
+      </article>
+      
+    </section>
+    <div class="cont_menu" id="menu">
+      <nav>
+        <a href="#">Home</a>
+        <a href="#categorias">Categori</a>
+        <a href="#service">Therapies</a>
+        <a href="#video">DeepMind</a>
+        <a href="#comentarios">Case Studies</a>
+        <a href="#staff">Psychiatrists</a>
+      </nav>
+    </div>
+    
+  </header>
+  <!-- --------------------------------------------------------------------------- -->
+  <section class="blog" id="home">
+    <br>
+    <br><br>
+    <br></br>
+   <!----------------------------------- SECCIÓN DEL SLIDE --------------------------------------------->
+    <article class="callbacks_container">
+      <article class="sliderText">
+        <div class="header">
+          <h2>WE IMPROVE PEOPLE’S LIVES AND</h2>
+          <br>
+          <h3>Benefit Society</h3>
+        </div>
+        <article class=" zona_slide">
+          <a href="#" id="abrirbtn">Haz una cita online</a>
+        </article>
+      </article>
+      <!---------------- IMAGENES ----------------->
+      <ul class="rslides" id="slider">
+        <li><img src="imagenes/oficina1.jpg" alt="#"></li>
+        <li><img src="imagenes/oficina2.jpg" alt="#"></li>
+        <li><img src="imagenes/oficina3.jpg" alt="#"></li>
+      </ul>
+      <!-- ................................................ -->
+    </article>
+    <!-- ...................................................................... -->
+    <br><br><br>
+    <section class="opciones" id="categorias">
+      <article class="opcion">
+        <h3>For Adults</h3>
+        <p>You can call our highly experienced clinical team if your child, teenager or family is going through difficulties.</p>
+        <br>
+        <p>ANXIETY</p>
+        <p>ANXIETY</p>
+        <p>ANXIETY</p>
+        <p>ANXIETY</p>
+      </article>
+      <article class="opcion">
+        <h3>For Children</h3>
+        <p>You can call our highly experienced clinical team if your child, teenager or family is going through difficulties.</p>
+        <br>
+        <p>ANXIETY</p>
+        <p>ANXIETY</p>
+        <p>ANXIETY</p>
+        <p>ANXIETY</p>
+      </article>
+      <article class="opcion">
+        <h3>For Business</h3>
+        <p>You can call our highly experienced clinical team if your child, teenager or family is going through difficulties.</p>
+        <br>
+        <p>ANXIETY</p>
+        <p>ANXIETY</p>
+        <p>ANXIETY</p>
+        <p>ANXIETY</p>
+      </article>
+    </section>
+  </section>
+  <br><br>
+  <section class="services" id="service">
+    <article class="title">
+      <h2>
+        Therapies & Treatments
+      </h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste at veniam nobis saepe error illum excepturi, eos </p>
+    </article>
+    <article class="opciones_de_servicio">
+      <article class="servicio wow  animate__animated animate__zoomInLeft">
+        <i class="fa-solid fa-bolt"></i>
+        <p>
+          <span>STRESS MANAGEMENT</span><br>
+          Your health is your most important asset. You should entrust it only to the best professionals.
+        </p>
+      </article>
+      <article class="servicio wow  animate__animated animate__zoomInLeft">
+        <i class="fa-solid fa-bolt"></i>
+        <p>
+          <span>STRESS MANAGEMENT</span><br>
+          Your health is your most important asset. You should entrust it only to the best professionals.
+        </p>
+      </article>
+      <article class="servicio wow  animate__animated animate__zoomInLeft">
+        <i class="fa-solid fa-bolt"></i>
+        <p>
+          <span>STRESS MANAGEMENT</span><br>
+          Your health is your most important asset. You should entrust it only to the best professionals.
+        </p>
+      </article>
+    </article><br><br>
+    <article class="opciones_de_servicio">
+      <article class="servicio wow  animate__animated animate__zoomInRight">
+        <i class="fa-solid fa-bolt"></i>
+        <p>
+          <span>STRESS MANAGEMENT</span><br>
+          Your health is your most important asset. You should entrust it only to the best professionals.
+        </p>
+      </article>
+      <article class="servicio wow  animate__animated animate__zoomInRight">
+        <i class="fa-solid fa-bolt"></i>
+        <p>
+          <span>STRESS MANAGEMENT</span><br>
+          Your health is your most important asset. You should entrust it only to the best professionals.
+        </p>
+      </article>
+      <article class="servicio wow  animate__animated animate__zoomInRight">
+        <i class="fa-solid fa-bolt"></i>
+        <p>
+          <span>STRESS MANAGEMENT</span><br>
+          Your health is your most important asset. You should entrust it only to the best professionals.
+        </p>
+      </article>
+    </article><br><br>
+      
+  </section>
+  <section id="video" class="video">
+    
+    <iframe max-width="560" max-height="315" src="https://www.youtube.com/embed/acxj7JQ3JPA?si=hpZYiwm3TO7rQ7iC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <section class="acordeon">
+        
+      <div class="acordeon_content">
+          <div class="dudas">
+              <h2>Welcome To DeepMind Clinic</h2>
+              <div class="cardContainer">
+                  <article class="tarjeta_acordeon">
+                      <div class="tarjeta_encabezado">
+                          <i class="fa-solid fa-square-plus  i"></i>
+                          <p>Expert Clinical Psychologists in the country.</p>
+                      </div>
+                      <div class="tarjeta_cuerpo">
+                        <p><i class="fa-solid fa-hospital"></i> Dealing with mental illness and addiction can be extremely difficult and painful. We understand that not everyone is the same and that a comprehensive diagnosis and flexible treatment plan are important to successful recovery.</p>
+                      </div>
+                  </article>
+                  <article class="tarjeta_acordeon">
+                      <div class="tarjeta_encabezado">
+                          <i class="fa-solid fa-square-plus i"></i>
+                          <p>Email</p>
+                      </div>
+                      <div class="tarjeta_cuerpo">
+                          <p><i class="fa-solid fa-envelope"></i></i> info@deepmind.com</p>
+                      </div>
+                  </article>
+              </div>
+          </div>
+        
+      </div><br><br>
+      <article class="hospitales">
+        <figure><img src="imagenes/logo_hospital1.png" alt=""></figure>
+        <figure class="img_grande"><img  src="imagenes/logo_hospital2.png" alt=""></figure>
+        <figure><img src="imagenes/logo_hospital3.png" alt=""></figure>
+        
+      </article>
+  </section>
+
+  </section>
+  <section id="stadistics" class="fondolaptop">
+    <div class="filtroParalax">
+      <div class="ancho contenidoparalax">
+        <article class="tarjeta xx wow  animate__animated animate__bounceInUp">
+          <i class="fa-solid fa-house-medical"></i>
+          <h2>Take the First Step to Help</h2>
+        </article>
+        <article class="tarjeta wow  animate__animated animate__bounceInUp">
+          <h3>Call DeepMind Clinic Now</h3>
+          <a href="#"> (800)123 4567</a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="comentarios" class="ancho gallery">
+    <br></br>
+    <div class="encabezado">
+      <h2 class="studies">Case Studies</h2>
+      
+    </div>
+    <br></br>
+    <div class="ancho galleryContent">
+      <div class="galleryPictureContainer">
+        <a data-fancybox="gallery" data-src="imagenes/terapia1.jpg" data-caption="The Hipocrisy of Antipsychiatry" class="content_large">
+          <img src="imagenes/terapia1.jpg" alt="Photo" class="img_large">
+          <!-- FILTRO -->
+          <div class="filtro2">
+            <h2>The Hipocrisy of Antipsychiatry</h2>
+            <br>
+            <p>View more</p>
+          </div>
+        </a>
+        <div class="part_down">
+          <a data-fancybox="gallery" data-src="imagenes/terapia2.jpg" data-caption="Social Media Risk to Mental Health" >
+            <img src="imagenes/terapia2.jpg" alt="Photo">
+            <div class="filtro2">
+              <h2>Social Media Risk to Mental Health</h2>
+              <br>
+              <p>View more</p>
+            </div>
+          </a>
+          <a data-fancybox="gallery" data-src="imagenes/terapia3.jpg" data-caption="Mindfulness For The Introvert">
+            <img src="imagenes/terapia3.jpg" alt="Photo">
+            <div class="filtro2">
+              <h2>Mindfulness For The Introvert</h2>
+              <br>
+              <p>View more</p>
+            </div>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="staff" class="ancho team">
+    <div class="encabezado">
+      <h2>Psychiatrists</h2>
+      
+    </div>
+
+    <br>
+    <div class="contenedorCarrusel">
+
+
+      <div class="flechas">
+        <a id="back-button">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <a id="forward-button">
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="ContenidoDer" id="carousel">
+        <div id="slide-container" class="contenedor_slide">
+          <!-- TARJETAS DEL CARROUSEL -->
+          <article class="slide" data-slideIndex="0">
+            <figure>
+                <img src="imagenes/doctor1.png" alt="">
+                <p class="nombre">Dr. Marco Rossi</p>
+                <p class="puesto">Envelope The Department of Pediatrics strives to improve the well-being of all children.</p>
+                <div class="redesTeam">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-square-snapchat"></i>
+                </div>
+              
+            </figure>
+          </article>
+          <article class="slide" data-slideIndex="1">
+            <figure>
+              <img src="imagenes/doctor2.png" alt="">
+              <p class="nombre">Dr. Sarah Johnson</p>
+              <p class="puesto">Envelope The Department of Pediatrics strives to improve the well-being of all children</p>
+              <div class="redesTeam">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-snapchat"></i>
+              </div>
+            </figure>
+          </article>
+          <article class="slide" data-slideIndex="2">
+            <figure>
+              <img src="imagenes/doctor3.png" alt="">
+              <p class="nombre">Dr. Gregory House</p>
+              <p class="puesto">Envelope The Department of Pediatrics strives to improve the well-being of all children</p>
+              <div class="redesTeam">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-snapchat"></i>
+              </div>
+            </figure>
+          </article>
+          <article class="slide" data-slideIndex="3">
+            <figure>
+              <img src="imagenes/doctor4.png" alt="">
+              <p class="nombre">Dr. Wilson</p>
+              <p class="puesto">Envelope The Department of Pediatrics strives to improve the well-being of all children.</p>
+              <div class="redesTeam">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-snapchat"></i>
+              </div>
+            </figure>
+          </article>
+        </div>
+
+      </div>
+    </div>
+    <br></br>
+
+
+
+  </section>
+  <!--  -->
+ 
+ 
+ 
+  <footer>
+    <a class="texto" href="#">Address: 4096 N Highland St, Arlington</a>
+    <a class="texto" href="#">VA 32101, USA</a>
+    <a class="texto" href="#">Email: info@deepmind.com</a>
+    <a class="texto" href="#">Phone: 800 1234 56 78</a>
+    <a class="flechaArriba" href="#anclaa"><i class="fa-solid fa-arrow-up-long"></i></a>
+  </footer>
+  
+  <script>
+    //funciones
+    //Función del modal
+  document.addEventListener("DOMContentLoaded", function () {
+    // Función del modal
+    var fondo = document.getElementById("modal");
+
+    $("#abrirbtn").click(function () {
+      fondo.style.display = "flex";
+    });
+
+    $("#cerrarbtn").click(function () {
+      fondo.style.display = "none";
+    });
+
+    window.onclick = function (event) {
+      if (event.target == fondo) {
+        fondo.style.display = "none";
+      }
+    };
+
+    // Mostrar el modal después de 15 segundos
+    //setTimeout(function () {
+    //  fondo.style.display = "flex";
+    //}, 15000); // 15000 milisegundos = 15 segundos
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+    // Función del modal
+    var fondo = document.getElementById("modal");
+
+    $("#abrirbtn2").click(function () {
+      fondo.style.display = "flex";
+    });
+
+    $("#cerrarbtn").click(function () {
+      fondo.style.display = "none";
+    });
+
+    window.onclick = function (event) {
+      if (event.target == fondo) {
+        fondo.style.display = "none";
+      }
+    };
+
+    // Mostrar el modal después de 15 segundos
+    //setTimeout(function () {
+    //  fondo.style.display = "flex";
+    //}, 15000); // 15000 milisegundos = 15 segundos
+  });
+    // ESTE ES EL SCRIP DEL MNU DE MOVIL
+    $("#iconomenu").click
+    (function (){
+      $("#menu").slideToggle("slow");
+      var question = $(this);
+      var icono = question.children('i');
+      $(".icon i").not(icono).removeClass('fas fa-bars fa').addClass('fa-solid fa-xmark')
+      icono.toggleClass('fas fa-bars fa fa-solid fa-xmark');
+    });
+
+    //ESTE ES EL SCRIPT QUE TE SUBE HASTA EL INICIO DE LA PAGINA
+    $(".FlechaUp").click(function(){
+      $('html, body').animate({
+      scrollTop: 0
+      }, '300');
+  });
+  </script>
+  <script src="js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+  <script>
+    Fancybox.bind("[data-fancybox]", {
+          // Your custom options
+      });
+      $(".tarjeta_acordeon .tarjeta_encabezado").click(function(){
+        var question = $(this);
+        var answer = question.next();
+        var icono = question.children('i');
+
+        // Cerrar las otras Cards
+        $(".tarjeta .tarjeta_cuerpo").not(answer).slideUp();
+        // Cambiar los demás iconos
+        $(".tarjeta .tarjeta_encabezado i").not(icono).removeClass('fa-square-minus').addClass('fa-square-plus');
+
+        // Toggle Respuesta e Iconos seleccionados
+        answer.slideToggle();
+        icono.toggleClass('fa-square-minus fa-square-plus');
+    });
+  </script>
+  <script>
+    function valida_formulario(){
+      if(document.getElementById("NombreCompleto").value.length == 0){
+        alert("Escribe tu nombre completo")
+        document.getElementById("NombreCompleto").focus();
+        return 0;
+      }
+      if(document.getElementById("CorreoElectronico").value.length == 0){
+        alert("Escribe tu correo electronico")
+        document.getElementById("CorreoElectronico").focus();
+        return 0;
+      }
+      if(document.getElementById("Celular").value.length == 0){
+        alert("Escribe tu numero de telefono")
+        document.getElementById("Celular").focus();
+        return 0;
+      }
+      document.formulario1.submit();
+    }
+  </script>
+  <script src="libreria_carrousel_js/carrousel.js"></script>
+</body>
+</html>

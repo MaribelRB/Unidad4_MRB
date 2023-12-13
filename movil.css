@@ -1,0 +1,212 @@
+@media screen and (max-width: 431px) {
+  .boton_contactanos a {
+    display: none;
+  }
+  .zona_slide{
+    display: block;
+  }
+  .ancho{
+    max-width: 95%;
+  }
+  .header p{
+    font-size: 24px;
+    color: white;
+  }
+  header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+ .menu_desktop{
+  display: none;
+ }
+ .boton_contactanos_movil{
+  display: inline-block;
+ }
+  .cont_menu {
+    width: 100%;
+    margin: auto;
+    display: none;
+    background-color: #ffffff;
+    color: black;
+    padding: 10px;
+  }
+
+  .logo {
+    max-width: 40%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    border-bottom: 1px #030303 dotted;
+    width: 100%;
+  }
+  .icon {
+    display: flex;
+    font-size: 20px;
+    margin-right: 10px;
+    color: rgb(0, 0, 0);
+  }
+  .hospitales{
+    width: 100%;
+    flex-direction: column;
+  }
+  nav a {
+    padding: 10px;
+    border: 0;
+    width: 100%;
+    color: rgb(0, 0, 0);
+  }
+
+  .contenedor_arriba {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+  }
+  .seccion1{
+    gap: 5px;
+  }
+  .secciones{
+    display: flex;
+    gap: 10px;
+  }
+  .seccion_logo{
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.61);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  /* slide */
+.blog {
+  text-align: center;
+}
+
+.header h3 {
+  color: var(--blanco);
+  padding: 10px;
+  margin-bottom: 0px;
+  font-size: 40px;
+}
+.header h2{
+  font-size: 15px;
+  color: white;
+}
+.servicio p span{
+  font-size: 12px;
+}
+.servicio p {
+  font-size: 12px;
+}
+.footer {
+  margin-top: 0px;
+  padding: 15px;
+  background-color: var(--subtitulo_imagen);
+  color: yellow;
+  text-align: center;
+}
+  /* paralax */
+  /* paralax */
+  .fondolaptop {
+    background-image: url("imagenes/paralax.jpg");
+    /* Set a specific height */
+    min-height: 350px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .filtroParalax {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 1050px;
+  }
+  .no_movil{
+    display: none;
+  }
+  .contenidoparalax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 100%;
+    gap: 35px;
+  }
+  .filtroModal {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 135vh;
+    width: 70%;
+    font-family: var(--cursiva);
+    padding: 20px;
+    position: relative;
+  }
+  .contenidomodal {
+    display: flex;
+    flex-direction: column;
+  }
+  .secciones{
+  
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .tarjeta{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tarjeta h2{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+  }
+  .tarjeta a:hover{
+    color: rgb(110, 110, 237);
+    transform: none;
+  }
+  .tarjeta h2 span{
+    font-size: 54px;
+  }
+
+  /* carousel */
+  .redesTeam {
+    gap: 10px;
+  }
+  /* map */
+  .location{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .map{
+    width: 100%;
+    height: 100%;
+  }
+  .acordeon_content{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0px 0;
+  }
+}
